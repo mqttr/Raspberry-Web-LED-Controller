@@ -20,56 +20,44 @@
                 text-align: center;
                 font-size: 40pt;
             }
-            .container{
+            div.container{
                 width: 80%;
                 height: 350px;
                 padding: 10px;
                 margin: 10px;
-                margin-top: 40%;
+                margin-top: 30%;
                 border: 6px solid black;
                 top: 50%;
                 background-color: whitesmoke;
                 border-radius: 10px;
                 display: inline-block;
             }
+            div.containertall{
+                height: 60%;
+            }
             button{
                 width: 99%;
                 height: 90px;
                 margin: 5px;
+                margin-top: 3.5%;
                 border-radius: 15px;
                 font-size: 30pt;
                 border-width: 5px;
             }
-            div.onerow{
-                height: 250px;
-            }
-            div.onerowtall{
-                height: 300px;
-            }
-            button.floatertwo{
-                display: inline-block;
-                width: 35%;
-                position: absolute;
-            }
-            button.floaterthree{
-                display: inline-block;
-                width: 22%;
-                position: absolute;
-            }
             button.tall{
-                height: 140px;
+                height: 350px;
             }
 
         </style>
     </head>
     <body class="fullscreen" id="fullscreen">
-        <div class="container">
+        <div class="container containertall">
             <h1>LED Control</h1>
                 <form action="/on" method="POST">
-                    <button type="submit">LED ON</button>
+                    <button class="tall" type="submit">LED ON</button>
                 </form>
                 <form action="/off" method="POST">
-                    <button type="submit">LED OFF</button>
+                    <button class="tall" type="submit">LED OFF</button>
                 </form>
         </div>
     </body>
