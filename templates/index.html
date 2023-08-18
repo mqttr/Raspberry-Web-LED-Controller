@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    <title>Light Control- Mqttr</title>
+    <meta charset="utf-8" />
+     <style>
+            #fullscreen {
+                height: 99%;
+                width: 98%;
+                background-repeat: no-repeat;
+                background-position: center top;
+                float: left;
+                background-color: rgb( 69, 90, 100);
+                display: block;
+                text-align: center;
+            }
+            h1 {
+                text-align: center;
+                font-size: 40pt;
+            }
+            .container{
+                width: 80%;
+                height: 350px;
+                padding: 10px;
+                margin: 10px;
+                margin-top: 40%;
+                border: 6px solid black;
+                top: 50%;
+                background-color: whitesmoke;
+                border-radius: 10px;
+                display: inline-block;
+            }
+            button{
+                width: 99%;
+                height: 90px;
+                margin: 5px;
+                border-radius: 15px;
+                font-size: 30pt;
+                border-width: 5px;
+            }
+            div.onerow{
+                height: 250px;
+            }
+            div.onerowtall{
+                height: 300px;
+            }
+            button.floatertwo{
+                display: inline-block;
+                width: 35%;
+                position: absolute;
+            }
+            button.floaterthree{
+                display: inline-block;
+                width: 22%;
+                position: absolute;
+            }
+            button.tall{
+                height: 140px;
+            }
+
+        </style>
+    </head>
+    <body class="fullscreen" id="fullscreen">
+        <div class="container">
+            <h1>LED Control</h1>
+                <form action="/on" method="POST">
+                    <button type="submit">LED ON</button>
+                </form>
+                <form action="/off" method="POST">
+                    <button type="submit">LED OFF</button>
+                </form>
+        </div>
+    </body>
+</html>
